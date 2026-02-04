@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cronograma de Estudos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h1>Cronograma de Estudos</h1>
+      <button id="helpBtn">?</button>
+    </div>
+
+    <div class="input-area">
+      <input type="text" id="taskInput" placeholder="Digite uma tarefa de estudo" />
+      <button id="addTaskBtn">Adicionar</button>
+    </div>
+
+    <div id="schedule">
+      <h3>📚 Tarefas</h3>
+      <ul id="scheduleList"></ul>
+    </div>
+  </div>
+
+  <!-- MODAL DE AJUDA -->
+  <div id="helpModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <h2>Como funciona?</h2>
+      <p>
+        • Digite uma tarefa e clique em <strong>Adicionar</strong>.<br><br>
+        • A tarefa aparecerá no cronograma.<br><br>
+        • Clique no texto da tarefa para marcar como <span class="green">concluída</span>.<br><br>
+        • A tarefa ficará verde, riscada e mais apagada.<br><br>
+        • Use o botão <strong>Excluir</strong> para remover a tarefa.
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
